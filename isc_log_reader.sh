@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# usage example:
+#   cd /home/sailpoint/log/
+#   tail -n50 ccg.log > temp.log && ./isc_log_reader.sh temp.log
+
 # Check if a file path was provided
 if [ -z "$1" ]; then
   echo "Usage: $0 <log_file>"

@@ -1,1 +1,0 @@
-<CONTENT OF isc_log_reader.sh>

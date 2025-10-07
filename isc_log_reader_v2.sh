@@ -3,6 +3,10 @@
 # usage:
 #   save this script on /home/sailpoint/log/
 #   cd /home/sailpoint/log/ && tail -n20 ccg.log > temp.log && ./isc_log_reader_v2.sh temp.log
+#   similar to -f (but lose the purpose of the relative time feature)
+#     cd /home/sailpoint/log && tail -F ccg.log | stdbuf -oL -eL ./isc_log_reader_v2.sh /dev/stdin
+#     cd /home/sailpoint/log && ./isc_log_reader_v2.sh <(tail -F ccg.log)
+
 #
 # extras:
 #   PRINT_STACK=all   -> print full stacktrace
